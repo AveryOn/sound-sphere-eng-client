@@ -11,7 +11,9 @@
     "type-check": "vue-tsc --build",
     "format": "prettier --write src/",
     "server-pull:main": "./scripts/server-pull.sh main",
-    "server-pull:dev": "./scripts/server-pull.sh dev"
+    "server-pull:dev": "./scripts/server-pull.sh dev",
+    "server-start:main": "./scripts/server-start.sh main",
+    "server-start:dev": "./scripts/server-start.sh dev"
   },
   "dependencies": {
     "axios": "^1.8.4",
