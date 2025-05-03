@@ -14,12 +14,7 @@ onMounted(() => {
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-<<<<<<< HEAD
-      <HelloWorld msg="You did it! DEV v1.0.10" />
-=======
-      <HelloWorld msg="You did it! [PROD] (X)" />
->>>>>>> 8555e8f747866aab629cbfe980fd8b4867cee04d
-
+      <HelloWorld msg="You did it! DEV v1.0.11" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
