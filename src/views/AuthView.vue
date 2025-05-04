@@ -1,5 +1,3 @@
 <template>
-    <div>
-        AUTH PAGE
-    </div>
+  <div>AUTH PAGE</div>
 </template>

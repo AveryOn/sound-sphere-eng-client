@@ -41,20 +41,19 @@ const router = createRouter({
   ],
 })
 
-router.beforeEach(async(to, from, next) => {
+router.beforeEach(async (to, from, next) => {
   const userData = await checkAuth()
-  if(userData !== null) {
-    if(to.name !== ROUTER_NAMES.themes) {
-      return next({ 
-        name: ROUTER_NAMES.themes 
+  if (userData !== null) {
+    if (to.name !== ROUTER_NAMES.themes) {
+      return next({
+        name: ROUTER_NAMES.themes,
       })
     }
-  } 
-  else {
-    if(to.name !== ROUTER_NAMES.auth)
-    return next({ 
-      name: ROUTER_NAMES.auth 
-    })
+  } else {
+    if (to.name !== ROUTER_NAMES.auth)
+      return next({
+        name: ROUTER_NAMES.auth,
+      })
   }
   next()
 })

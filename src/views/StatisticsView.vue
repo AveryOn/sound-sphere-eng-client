@@ -1,5 +1,3 @@
 <template>
-    <div>
-        STATISTICS PAGE
-    </div>
+  <div>STATISTICS PAGE</div>
 </template>

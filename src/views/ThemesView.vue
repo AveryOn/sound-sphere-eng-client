@@ -1,5 +1,3 @@
 <template>
-    <div>
-        THEMES PAGE
-    </div>
+  <div>THEMES PAGE</div>
 </template>
