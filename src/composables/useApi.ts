@@ -88,7 +88,6 @@ function formatApiMsg(
  * Обертки над axios с типизацией и JSDoc.
  */
 export function useApi(apiConfig?: UseApiConfig) {
-    
     /**
      * Выполняет GET-запрос
      * @template R - Тип возвращаемого значения
@@ -117,7 +116,6 @@ export function useApi(apiConfig?: UseApiConfig) {
             throw err
         }
     }
-
 
     /**
      * Выполняет POST-запрос
@@ -149,7 +147,6 @@ export function useApi(apiConfig?: UseApiConfig) {
             throw err
         }
     }
-
 
     /**
      * Выполняет PUT-запрос (полное обновление ресурса)
@@ -206,7 +203,6 @@ export function useApi(apiConfig?: UseApiConfig) {
             throw err
         }
     }
-
 
     /**
      * Выполняет DELETE-запрос
