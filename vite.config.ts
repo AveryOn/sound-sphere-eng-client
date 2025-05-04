@@ -3,6 +3,8 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import dotenv from 'dotenv'
+dotenv.config()
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -18,8 +20,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: process.env.SERVER_URL ?? 'http://example:1234',
-        changeOrigin: true
+        target: process.env.SERVER_URL,
+        changeOrigin: true,
       }
     }
   }
