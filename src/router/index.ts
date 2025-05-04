@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import _indexView from '@/views/_indexView.vue'
 import ThemesView from '@/views/ThemesView.vue'
 import { checkAuth } from '@/api/auth.api'
+import AuthView from '@/views/AuthView.vue'
+import StatisticsView from '@/views/StatisticsView.vue'
 
 /**
  * Карта всех имен маршрутов клиента
@@ -24,7 +26,7 @@ const router = createRouter({
     {
       path: '/auth',
       name: 'auth',
-      component: ThemesView,
+      component: AuthView,
     },
     {
       path: '/themes',
@@ -34,7 +36,7 @@ const router = createRouter({
     {
       path: '/statistics',
       name: 'statistics',
-      component: ThemesView,
+      component: StatisticsView,
     },
   ],
 })

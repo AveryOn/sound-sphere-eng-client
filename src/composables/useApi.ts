@@ -77,7 +77,7 @@ function formatApiMsg(
         if(!level) throw '[formatApiMsg] level is not defined'
         if(!LOG_LEVELS.includes(level)) throw '[formatApiMsg] level is not valid'
 
-        return paintMsg(`[API] ${API_METHODS[method]}/  ${url}`, level)
+        return paintMsg(` [API] ${API_METHODS[method]}/  ${url} `, level)
     } catch (err) {
         console.error(err); throw err
     }
