@@ -18,7 +18,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000', // адрес API в dev
+        target: process.env.SERVER_ULR ?? 'http://example:1234',
         changeOrigin: true
       }
     }
