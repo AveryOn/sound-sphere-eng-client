@@ -8,7 +8,7 @@ onMounted(() => {
 
 <template>
   <header>
-    <div class="wrapper">HELLO WORLD v0.0.2</div>
+    <div class="wrapper">HELLO WORLD v0.0.3</div>
   </header>
 
   <RouterView />
