@@ -26,7 +26,7 @@ type LogLevel = 'INFO' | 'DEBUG' | 'ERROR' | 'WARN'
 const LOG_LEVELS = ['INFO', 'DEBUG', 'ERROR', 'WARN'] as const
 const API_METHODS = {
   GET: 'GET',
-  POST: 'GET',
+  POST: 'POST',
   PUT: 'PUT',
   PATCH: 'PATCH',
   DELETE: 'DELETE',
